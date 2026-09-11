@@ -1,0 +1,20 @@
+[project]
+name = "langgraph-agents"
+version = "0.1.0"
+description = "Production agent workflows, state machines, and multi-agent systems built with LangGraph, LangChain, and LangSmith."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "langgraph>=0.2.20",
+    "langchain>=0.3.0",
+    "langchain-core>=0.3.0",
+    "langchain-community>=0.3.0",
+    "langchain-google-genai>=2.0.0",
+    "langchain-openai>=0.2.0",
+    "langsmith>=0.1.120",
+    "python-dotenv>=1.0.0",
+    "pydantic>=2.0.0",
+    "requests>=2.31.0",
+    "rich>=13.0.0",
+    "langchain-ollama>=1.1.0",
+]
