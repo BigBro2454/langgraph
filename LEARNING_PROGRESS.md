@@ -137,6 +137,34 @@
 
 ---
 
+### Special Milestone — Book 4: Agentic Design Patterns Integration
+- **Status:** ✅ Complete
+- **Completed on:** September 21, 2026
+- **Reference:** *Agentic Design Patterns Handbook: The Ultimate Guide to Building Autonomous AI Agents* by Felix Williams (Book 4)
+- **Notes:** Engineered and benchmarked full production implementations of all 11 core patterns from Book 4 in LangGraph, including automated unit tests, unified CLI execution, comprehensive architectural manual, and an interactive HTML decision wizard.
+
+#### Implemented Patterns
+- [x] **ReAct Pattern (Ch 2.1)** — Interleaved reasoning and tool calling state machine with circuit breaker turn limits (`agents/react_pattern`)
+- [x] **Plan-and-Execute (Ch 2.2)** — Strategic planner + tactical executor + adaptive replanner (+25-40% multi-step lift) (`agents/plan_and_execute`)
+- [x] **Reflexion (Ch 2.3)** — Verbal self-reflection + episodic failure memory (+36% relative HumanEval lift) (`agents/reflexion`)
+- [x] **Tree-of-Thought (Ch 2.4)** — K-branching + evaluator scoring + beam search pruning (74% vs 4% on Game of 24) (`agents/tree_of_thought`)
+- [x] **Monte Carlo Tree Search (Ch 2.5)** — UCB1 selection, expansion, simulation rollout, and backpropagation (42-49% SWE-Bench) (`agents/mcts`)
+- [x] **Supervisor-Crew (Ch 5.1)** — Central coordinator routing to domain specialists (`agents/supervisor`)
+- [x] **Hierarchical Teams (Ch 5.2)** — Executive Director delegating to Research and Engineering team leads (`agents/hierarchical_teams`)
+- [x] **Debate / Adversarial (Ch 5.3)** — Proponent vs Critic with Supreme Arbiter (-30-50% hallucinations) (`agents/debate_adversarial`)
+- [x] **Market-Based / Contract Net (Ch 5.4)** — Task broker RFP auction with competitive agent bidding (-40-60% token cost) (`agents/market_based`)
+- [x] **Sequential Pipeline (Ch 5.5)** — 4-stage assembly line with typed state contracts & checkpointing (`agents/sequential_pipeline`)
+- [x] **Parallel Execution (Ch 5.6)** — Fan-out concurrent specialist auditors to CTO synthesizer (`agents/parallel_execution`)
+- [x] **3-Layer Guardrails (Ch 7.3 & 8.1)** — Input defense, reasoning limits, and Constitutional AI auto-remediation (`agents/guardrails_constitutional`)
+
+#### Documentation & Verification
+- [x] Comprehensive Manual: [`docs/BOOK4_AGENTIC_DESIGN_PATTERNS.md`](file:///Users/ishan03/Workspace/projects/ai/langgraph/docs/BOOK4_AGENTIC_DESIGN_PATTERNS.md)
+- [x] Interactive Visual Dashboard: [`docs/agentic_patterns_interactive.html`](file:///Users/ishan03/Workspace/projects/ai/langgraph/docs/agentic_patterns_interactive.html)
+- [x] Automated Test Suite: `pytest evals/test_book4_patterns.py -v` (12/12 passing)
+- [x] Unified CLI Runner: `python runners/run_agent.py [agent_name]`
+
+---
+
 ### Week 10 — Observability & Tracing `In Progress 🔄`
 - **Status:** 🔄 Up Next
 - **Topics:** LangSmith trace waterfalls, grouping runs into threads, online evals vs. insights, project alerting.
@@ -155,4 +183,4 @@
 
 ---
 
-*Last updated: September 19, 2026 | LangGraph v1.2+ | LangChain v1.4+ | LCAE Track*
+*Last updated: September 21, 2026 | LangGraph v1.2+ | LangChain v1.4+ | LCAE Track | Book 4 Architecture*
