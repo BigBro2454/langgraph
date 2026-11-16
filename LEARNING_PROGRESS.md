@@ -165,9 +165,11 @@
 
 ---
 
-### Week 10 — Observability & Tracing `In Progress 🔄`
-- **Status:** 🔄 Up Next
-- **Topics:** LangSmith trace waterfalls, grouping runs into threads, online evals vs. insights, project alerting.
+### Week 10 — Observability & Tracing `Complete ✅`
+- **Status:** ✅ Complete
+- **Completed on:** November 16, 2026
+- **Topics:** LangSmith trace waterfalls, Langfuse distributed tracing handler, grouping runs into threads (`ThreadSessionManager`), real-time online evaluators (`OnlineEvaluator`: latency SLA, length budget, PII scrub, adversarial injection gate), and operational cost/alert dispatchers.
+- **Verification:** `pytest evals/test_online_evals.py -v` (7/7 passed, 19/19 full suite)
 
 ---
 
@@ -183,4 +185,4 @@
 
 ---
 
-*Last updated: September 21, 2026 | LangGraph v1.2+ | LangChain v1.4+ | LCAE Track | Book 4 Architecture*
+*Last updated: November 16, 2026 | LangGraph v1.2+ | LangChain v1.4+ | LCAE Track | Book 4 Architecture*
